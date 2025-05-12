@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Petshop Felicidade</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -12,65 +15,64 @@
       <img src="https://img.icons8.com/ios-filled/50/4e8cff/dog.png" alt="Logo Petshop" class="logo">
       <nav class="nav">
         <a href="#servicos">Serviços</a>
-        <a href="#depoimentos">Depoimentos</a>
-        <a href="#contato">Contato</a>
+        <a href="#contato">Agende</a>
       </nav>
     </div>
   </header>
   <main>
     <section class="hero">
       <div class="container">
-        <h1>Bem-vindo ao Petshop Felicidade 🐾</h1>
-        <p>Cuidando do seu pet com amor, carinho e profissionalismo. Serviços completos para cães e gatos!</p>
-        <a href="#contato" class="cta-btn">Agende uma visita</a>
+        <h1 class="fade-in">Bem-vindo ao Petshop Felicidade 🐾</h1>
+        <p class="fade-in" style="animation-delay:0.2s">Cuidando do seu pet com amor e profissionalismo.<br> Banho & Tosa, Vacinação, Consultas e muito mais!</p>
+        <a href="#contato" class="cta-btn pop-up" style="animation-delay:0.4s">Marque uma consulta</a>
       </div>
     </section>
     <section id="servicos" class="servicos">
       <div class="container">
-        <h2>Nossos Serviços</h2>
+        <h2 class="fade-in">Serviços Disponíveis</h2>
         <div class="cards">
-          <div class="card">
+          <div class="card slide-up">
             <img src="https://img.icons8.com/color/96/000000/scissors--v1.png" alt="Banho e Tosa">
             <h3>Banho e Tosa</h3>
-            <p>Deixe seu pet sempre limpo e cheiroso, com profissionais treinados e produtos de qualidade.</p>
+            <p>Seu pet limpo, cheiroso e com toda segurança e carinho.</p>
           </div>
-          <div class="card">
+          <div class="card slide-up" style="animation-delay:0.13s">
+            <img src="https://img.icons8.com/color/96/4e8cff/needle.png" alt="Vacinação">
+            <h3>Vacinação</h3>
+            <p>Imunização garantida para saúde e proteção do seu animal.</p>
+          </div>
+          <div class="card slide-up" style="animation-delay:0.25s">
             <img src="https://img.icons8.com/color/96/4e8cff/stethoscope.png" alt="Consulta Veterinária">
             <h3>Consulta Veterinária</h3>
-            <p>Saúde e bem-estar em primeiro lugar. Consultas, vacinas e exames com veterinários experientes.</p>
+            <p>Profissionais experientes e atendimento humanizado.</p>
           </div>
-          <div class="card">
+          <div class="card slide-up" style="animation-delay:0.37s">
             <img src="https://img.icons8.com/color/96/4e8cff/dog-bowl.png" alt="Alimentação Premium">
             <h3>Alimentação Premium</h3>
-            <p>Selecionamos as melhores rações e petiscos para o seu animal ter uma dieta equilibrada.</p>
+            <p>As melhores marcas de rações e petiscos à sua disposição.</p>
           </div>
-        </div>
-      </div>
-    </section>
-    <section id="depoimentos" class="depoimentos">
-      <div class="container">
-        <h2>Depoimentos</h2>
-        <div class="slider">
-          <blockquote>
-            <p>“O atendimento foi excelente e minha cachorrinha amou a tosa!”</p>
-            <footer>— Maria, tutora da Lili</footer>
-          </blockquote>
-          <blockquote>
-            <p>“O veterinário identificou o problema rapidamente e salvou meu gato. Recomendo muito!”</p>
-            <footer>— João, tutor do Biscoito</footer>
-          </blockquote>
         </div>
       </div>
     </section>
     <section id="contato" class="contato">
       <div class="container">
-        <h2>Entre em Contato</h2>
-        <form>
-          <input type="text" placeholder="Seu nome" required>
-          <input type="email" placeholder="Seu e-mail" required>
-          <textarea placeholder="Sua mensagem" required></textarea>
-          <button type="submit">Enviar</button>
+        <h2 class="fade-in">Agende uma Consulta</h2>
+        <form id="agendamento-form">
+          <input type="text" placeholder="Seu nome" name="nome" required>
+          <input type="email" placeholder="Seu e-mail" name="email" required>
+          <select name="servico" required>
+            <option value="">Selecione o serviço</option>
+            <option>Banho & Tosa</option>
+            <option>Vacinação</option>
+            <option>Consulta Veterinária</option>
+            <option>Alimentação Premium</option>
+          </select>
+          <input type="date" name="data" required>
+          <input type="time" name="hora" required>
+          <textarea placeholder="Observações (opcional)" name="obs"></textarea>
+          <button type="submit">Agendar agora</button>
         </form>
+        <div id="form-msg" style="display:none;text-align:center;color:green;margin-top:8px;font-weight:600;">Agendamento enviado com sucesso!</div>
         <div class="contato-info">
           <p><strong>Endereço:</strong> Rua dos Pets, 123, Centro</p>
           <p><strong>Telefone:</strong> (11) 99999-8888</p>
@@ -88,6 +90,8 @@
         <a href="#"><img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp"></a>
       </div>
     </div>
+    <div style="font-size:0.8em;text-align:center;margin-top:4px;">Landing page aprimorada por IA | Atualizada em 2025</div>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
