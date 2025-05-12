@@ -1,0 +1,184 @@
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #454545;
+  background: #f8fafc;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+header {
+  background: #4e8cff;
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+}
+.logo {
+  height: 42px;
+}
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 14px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+.nav a:hover {
+  text-decoration: underline;
+  color: #84b1ff;
+}
+.hero {
+  background: linear-gradient(120deg, #4e8cff 75%, #32a88d 100%);
+  color: #fff;
+  padding: 66px 0 48px 0;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 12px;
+}
+.cta-btn {
+  background: #fff;
+  color: #4e8cff;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-top: 18px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.cta-btn:hover {
+  background: #4e8cff;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.servicos {
+  background: #fff;
+  padding: 64px 0 40px 0;
+  text-align: center;
+}
+.cards {
+  display: flex;
+  gap: 28px;
+  margin-top: 32px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  background: #f8fafc;
+  border-radius: 20px;
+  box-shadow: 0 2px 9px rgba(78, 140, 255, 0.07);
+  padding: 30px 22px;
+  max-width: 290px;
+  flex: 1;
+  min-width: 220px;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 6px 20px rgba(78,140,255,0.14);
+}
+.card img {
+  height: 64px;
+  margin-bottom: 12px;
+}
+.card h3 {
+  color: #4e8cff;
+  margin-bottom: 10px;
+}
+.depoimentos {
+  background: #e9f1fb;
+  padding: 64px 0 32px 0;
+  text-align: center;
+}
+.slider blockquote {
+  background: #fff;
+  color: #333;
+  border-radius: 16px;
+  padding: 28px 18px;
+  margin: 0 auto 18px auto;
+  box-shadow: 0 2px 12px rgba(78, 140, 255, 0.08);
+  max-width: 460px;
+  font-style: italic;
+}
+.slider footer {
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #4e8cff;
+}
+.contato {
+  background: #fff;
+  padding: 54px 0 30px 0;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  margin: 0 auto 20px auto;
+  gap: 10px;
+}
+form input, form textarea {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #b9d5fc;
+  font-size: 1rem;
+  resize: vertical;
+}
+form button {
+  background: #4e8cff;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+form button:hover {
+  background: #397ae3;
+}
+.contato-info {
+  margin-top: 16px;
+  color: #555;
+}
+footer {
+  background: #4e8cff;
+  color: #fff;
+  padding: 20px 0;
+}
+.footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer-flex p {
+  margin: 0;
+}
+.redes a img {
+  height: 32px;
+  filter: drop-shadow(1px 2px 2px #90bcff48);
+}
+@media (max-width: 800px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-flex {
+    flex-direction: column;
+    gap: 12px;
+  }
+}
